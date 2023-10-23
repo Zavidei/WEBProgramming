@@ -119,12 +119,11 @@ a:hover {
     display: inline-block;
     width: 20%;
     height: 60vh;
-    background-color:  rgba(36, 37, 38, 0.95);
-    border: 4px solid rgb(165, 9, 5);
-    transition: 2;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    z-index: 1;
+    --color-content-600: #878582;
+    transition: filter 350ms;
+    background-color:rgba(36, 37, 38, 0.1);
+    border-radius: 0;
+    position: relative;
 
 }
 .block-news{
@@ -135,6 +134,14 @@ a:hover {
     width: 100%;
     height:auto;
 }
-.news:hover {
-    background: rgb(165, 9, 5);
+.news-text{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #B0AFAC;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+
 }
