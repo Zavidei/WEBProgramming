@@ -95,7 +95,7 @@ a:hover {
     min-height: 100vh;
     position: relative;
     background: linear-gradient(to top, #000000, #303032);
-    z-index: -1;
+   
 }
 .last-news{
     font-weight: 400;
@@ -112,7 +112,7 @@ a:hover {
     min-height: 100vh;
     position: relative;
     background: linear-gradient(to top, #000000, #000000);
-    z-index: -1;
+    
 }
 .news{
     margin-top: 50px;
@@ -120,11 +120,14 @@ a:hover {
     width: 20%;
     height: 60vh;
     --color-content-600: #878582;
-    transition: filter 350ms;
+    transition: 1s;
     background-color:rgba(36, 37, 38, 0.1);
     border-radius: 0;
     position: relative;
 
+}
+.news:hover{
+    transform: scale(1.1);
 }
 .block-news{
     display: flex;
