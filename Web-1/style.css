@@ -205,7 +205,7 @@ p{
     border: 3px solid #B0AFAC;
     border-radius: 50%;
     padding: 10px;
-    transition: 0.4s;
+    transition: all 0.4s ease;
 }
 .social:hover{
     border: 3px solid rgb(165, 9, 5);
