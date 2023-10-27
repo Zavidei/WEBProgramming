@@ -78,12 +78,13 @@ a:hover {
     background-image: url(images/logo-review.jpg);
     background-size: cover;
     opacity: 60%;
+    
 }
 .review-2{
     min-height: 100vh;
     position: relative;
     margin: 0;
-    background-color: #303032;
+    background: linear-gradient(to top, #303032, #afeaec);
 
 }
 h1{
@@ -112,8 +113,9 @@ h1{
     display: inline-block;
     position: relative;
     perspective: 1000px;
+    align-items: center;
 }
-.front-1{
+.front{
     position: absolute;
     width:100%;
     height: 100%;
@@ -121,17 +123,13 @@ h1{
     left:0;
     transition:1s;
     backface-visibility: hidden;
+    box-shadow: 0 0 10px  #afeaec, 0 0 40px  #afeaec;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.front-2{
-    position: absolute;
-    width:100%;
-    height: 100%;
-    top:0;
-    left:0;
-    transition:1s;
-    backface-visibility: hidden;
-}
-.back-1{
+.back{
     position: absolute;
     width:100%;
     height: 100%;
@@ -141,22 +139,9 @@ h1{
     transform: rotateY(180deg);
     transition:1s;
     backface-visibility: hidden;
+    box-shadow: 0 0 10px rgb(165, 9, 5);
+    border-radius: 10px;
 }
-.back-2{
-    position: absolute;
-    width:100%;
-    height: 100%;
-    top:0;
-    left:0;
-    background-color:#303032;
-    transform: rotateY(180deg);
-    transition:1s;
-    backface-visibility: hidden;    
-}
-.card:hover .front-1{transform: rotateY(180deg);}
-.card:hover .front-2{transform: rotateY(180deg);}
-.card:hover .back-1{transform: rotateY(360deg);}
-.card:hover .back-2{transform: rotateY(360deg);}
 p{   
     font-weight: 400;
     text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
@@ -169,9 +154,117 @@ p{
     text-align: center;
 }
 .review-3{
-    min-height: 100vh;
+    min-height: 150vh;
     position: relative;
     margin: 0;
     background-color: #303032;
 
+}
+.class-1{
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.class-card{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    perspective: 1000px;
+    
+}
+.class-card:hover .front{transform: rotateY(180deg);}
+.class-card:hover .back{transform: rotateY(360deg);}
+.review-4{
+    min-height: 450vh;
+    position: relative;
+    margin: 0;
+    background-color: #303032;
+
+}
+.front-1{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    transition:1s;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px #303032, 0 0 40px  #303032;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.back-1{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: #303032;
+    transform: rotateY(180deg);
+    transition:1s;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px rgb(165, 9, 5);
+    border-radius: 10px;
+}
+.card:hover .front-1{transform: rotateY(180deg);}
+.card:hover .back-1{transform: rotateY(360deg);}
+.text-class{
+    font-weight: 400;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: #B0AFAC;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+.races{
+    margin-top: 40px;
+    width: 100%;
+    height: 449px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.races-card{
+    width: 450px;
+    height: 449px;
+    display: inline-block; 
+    position: relative; 
+    perspective: 1000px;
+}
+.races-card:hover .front{transform: rotateY(180deg);}
+.races-card:hover .back{transform: rotateY(360deg);}
+footer{
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to top, #000000, #303032);
+
+}
+.contact{
+    margin-top: 50px;
+    text-align: center;
+}
+.social{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    border: 3px solid #B0AFAC;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+.social:hover{
+    border: 3px solid rgb(165, 9, 5);
+}
+.how{
+    padding-top: 200px;
 }
