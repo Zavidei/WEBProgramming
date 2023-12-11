@@ -114,26 +114,38 @@ a:hover {
     background: linear-gradient(to top, #303032, #303032);
     
 }
-.news{
-    margin-top: 50px;
-    display: inline-block;
-    width: 20%;
-    height: 60vh;
+.block-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 80%;
+}
+
+.news {
+    margin-top: 20px; 
+    max-width: 30%; 
+    max-height: 60vh;
     --color-content-600: #878582;
     transition: 1s;
-    background-color:rgba(36, 37, 38, 0.1);
-    border-radius: 0;
-    position: relative;
+    background-color: rgba(36, 37, 38, 0.1);
+    border-radius: 8px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.66), inset 0 0 10px rgba(255, 255, 255, 0.1);
-
+    box-sizing: border-box; 
+}
+@media only screen and (max-width: 789px) {
+    .news {
+        max-width: 45%; 
+    }
+}
+@media only screen and (max-width: 530px) {
+    .news {
+        max-width: 90%; 
+    }
 }
 .news:hover{
     transform: scale(1.1);
 }
-.block-news{
-    display: flex;
-    justify-content: space-around;
-}
+
 .image-news{
     width: 100%;
     height:auto;
@@ -165,7 +177,7 @@ h1{
     justify-content: center;
     padding-top: 80px;
     font-size: 3em;
-
+    text-align: center;
 }
 p{
     font-weight: 400;
@@ -179,20 +191,32 @@ p{
     text-align: center;
 }
 .slide{
-    display: inline-block;
-    width: 400px;
-    height: 200px;
+    max-width: 30%;
+    max-height: 50vh;
     transition: 1s;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(165, 9, 5),0 0 40px rgb(165, 9, 5);
+    box-sizing: border-box;
+    margin-top: 10px;
 }
 .scrine{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    max-width:90% ;
+    margin-left: auto;
+    margin-right: auto;
 }
-.slide:hover{
-    transform: scale(1.25);
+@media only screen and (max-width: 768px) {
+    .slide {
+        max-width: 50%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slide {
+        max-width: 90%; 
+    }
 }
 .contact{
     margin-top: 50px;
