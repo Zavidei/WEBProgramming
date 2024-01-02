@@ -132,15 +132,17 @@ a:hover {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.66), inset 0 0 10px rgba(255, 255, 255, 0.1);
     box-sizing: border-box; 
 }
-@media only screen and (max-width: 789px) {
+@media only screen and (max-width:  768px) {
     .news {
-        max-width: 45%; 
+        max-width: 45%;
     }
+
 }
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 480px) {
     .news {
-        max-width: 90%; 
+        max-width: 90%;
     }
+
 }
 .news:hover{
     transform: scale(1.1);
@@ -155,8 +157,7 @@ a:hover {
     text-transform: uppercase;
     text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
     color: #B0AFAC;
-    line-height: 30px;
-    font-size: 18px;
+    font-size:calc(12px + 8 * (100vw - 320px) / 880);
     margin: 0;
     padding: 20px;
 
@@ -193,10 +194,9 @@ p{
 .slide{
     max-width: 30%;
     max-height: 50vh;
-    transition: 1s;
-    border-radius: 10px;
     box-sizing: border-box;
     margin-top: 10px;
+    padding-left: 10px;
 }
 .scrine{
     margin-top: 50px;
