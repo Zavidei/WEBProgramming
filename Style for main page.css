@@ -4,74 +4,118 @@
     box-sizing: border-box;
 }
 
-
-.navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 1;
-    background-color: rgba(36, 37, 38, 0.95);
-    position: sticky;
+.navBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
     top: 0;
-    height: 70px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-nav {
+span {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav {
+    height: 70px;
+    background-color: rgb(36, 37, 38, 0.95);
+    position: fixed;
+    width: 100%;
     display: flex;
-    gap: 3em;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
+    z-index: 2;
 }
 
-nav a {
-    display: block;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    color: #FFF;
-
-
-}
-
-.class {
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    margin-top: 3px;
-}
-
-.button {
-    background-color: rgb(0, 0, 0, 0.3);
-    color: #FFF;
-    border-radius: 30px;
-    border: 2px solid rgb(165, 9, 5);
+button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
     font-weight: 700;
     font-size: 1em;
-    transition: 2;
-    transition: all 0.5s ease;
     cursor: pointer;
-
-
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(165, 9, 5);
+    border-image: initial;
+    transition: all 0.5s ease 0s;
+    margin-right: 30px;
 }
 
-.button:hover {
-    background: rgb(165, 9, 5);
+button:hover {
+    background-color: rgb(165, 9, 5);
 }
 
-a {
+.navBar a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: #FFF;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navBar a:hover {
+    color: #f1f1f1;
+}
+
+.navBar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+li {
+    display: inline;
+}
+
+.navButton {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
     transition: all 0.5s ease;
 }
 
-a:hover {
+.navButton:hover {
     color: rgb(165, 9, 5);
+}
+
+@media only screen and (min-width: 479px) {
+    .navButton {
+        display: inline;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navButton {
+        display: none;
+    }
+
+    span {
+        display: block;
+    }
 }
 
 .home-1 {
@@ -81,7 +125,7 @@ a:hover {
 }
 
 .vidio {
-    position:absolute;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -89,15 +133,15 @@ a:hover {
     object-fit: cover;
     opacity: 70%;
     z-index: -1;
-   
 }
-.home-2{
-    min-height: 100vh;
+
+.home-2 {
+    min-height: 150vh;
     position: relative;
     background: linear-gradient(to top, #303032, #303032);
-   
 }
-.last-news{
+
+.last-news {
     font-weight: 400;
     line-height: 1.05;
     text-transform: uppercase;
@@ -108,12 +152,17 @@ a:hover {
     padding-top: 80px;
     font-size: 3em;
 }
-.home-3{
+
+a {
+    text-decoration: none;
+}
+
+.home-3 {
     min-height: 100vh;
     position: relative;
     background: linear-gradient(to top, #303032, #303032);
-    
 }
+
 .block-news {
     display: flex;
     flex-wrap: wrap;
@@ -122,53 +171,55 @@ a:hover {
 }
 
 .news {
-    margin-top: 20px; 
-    max-width: 30%; 
+    margin-top: 20px;
+    max-width: 30%;
     max-height: 60vh;
     --color-content-600: #878582;
     transition: 1s;
     background-color: rgba(36, 37, 38, 0.1);
     border-radius: 8px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.66), inset 0 0 10px rgba(255, 255, 255, 0.1);
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-@media only screen and (max-width:  768px) {
+
+@media only screen and (max-width: 768px) {
     .news {
         max-width: 45%;
     }
-
 }
+
 @media only screen and (max-width: 480px) {
     .news {
         max-width: 90%;
     }
-
 }
-.news:hover{
+
+.news:hover {
     transform: scale(1.1);
 }
 
-.image-news{
+.image-news {
     width: 100%;
-    height:auto;
+    height: auto;
 }
-.news-text{
+
+.news-text {
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
     color: #B0AFAC;
-    font-size:calc(12px + 8 * (100vw - 320px) / 880);
+    font-size: calc(12px + 8 * (100vw - 320px) / 880);
     margin: 0;
     padding: 20px;
-
 }
-footer{
+
+footer {
     min-height: 100vh;
     position: relative;
     background: linear-gradient(to top, #000000, #303032);
-
 }
-h1{
+
+h1 {
     font-weight: 400;
     line-height: 1.05;
     text-transform: uppercase;
@@ -180,7 +231,8 @@ h1{
     font-size: 3em;
     text-align: center;
 }
-p{
+
+p {
     font-weight: 400;
     text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
     color: #B0AFAC;
@@ -191,38 +243,43 @@ p{
     margin-right: 30px;
     text-align: center;
 }
-.slide{
+
+.slide {
     max-width: 30%;
     max-height: 50vh;
     box-sizing: border-box;
     margin-top: 10px;
     padding-left: 10px;
 }
-.scrine{
+
+.scrine {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width:90% ;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
+
 @media only screen and (max-width: 768px) {
     .slide {
-        max-width: 50%; 
+        max-width: 50%;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .slide {
-        max-width: 90%; 
+        max-width: 90%;
     }
 }
-.contact{
+
+.contact {
     margin-top: 50px;
     text-align: center;
 }
-.social{
+
+.social {
     height: 50px;
     width: 50px;
     margin: 20px;
@@ -231,9 +288,11 @@ p{
     padding: 10px;
     transition: all 0.4s ease;
 }
-.social:hover{
+
+.social:hover {
     border: 3px solid rgb(165, 9, 5);
 }
-.how{
+
+.how {
     padding-top: 200px;
 }
