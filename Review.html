@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/icon.png">
 </head>
+
 <body>
-    <header class="navigation-bar">
-        <a class="logo" href="index.html">
-            <img class="class" src="images/icon.png" alt="home">
-        </a>
-        <nav>
+    <header>
+        <div id="menu" class="navBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
             <a href="Review.html">Review</a>
             <a href="news.html">News</a>
             <a href="forum.html">Forum</a>
             <a href="addons.html">Addons</a>
+        </div>
+        <div class="nav">
+            <span onclick="openNav()">☰</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="navButton">Home</a></li>
+                    <li><a href="Review.html" class="navButton">Review</a></li>
+                    <li><a href="news.html" class="navButton">News</a></li>
+                    <li><a href="forum.html" class="navButton">Forum</a></li>
+                    <li><a href="addons.html" class="navButton">Addons</a></li>
+                </ul>
+            </nav>
             <a
-                href="https://sirus.one/?utm_source=google&utm_medium=cpc&utm_campaign=google_g&utm_content=675713451724&utm_term=вов%20сирус%203.3%205а.b.c..&gclid=EAIaIQobChMIloCh9Mv8gQMVhZmDBx2b9wsvEAAYASAAEgKhmfD_BwE">
-                <button class="button">Download</button>
-            </a>
-        </nav>
+                href="https://sirus.one/?utm_source=google&utm_medium=cpc&utm_campaign=google_g&utm_content=675713451724&utm_term=вов%20сирус%203.3%205а.b.c..&gclid=EAIaIQobChMIloCh9Mv8gQMVhZmDBx2b9wsvEAAYASAAEgKhmfD_BwE"><button>Download</button></a>
+        </div>
     </header>
-    <section class="review-1">  
+    <section class="review-1">
     </section>
     <section class="review-2">
         <h1>Choose your side!</h1>
@@ -34,7 +45,9 @@
                     <img src="images/World of Warcraft Alliance.png" alt="">
                 </div>
                 <div class="back-1">
-                    <p>The Alliance is one of two factions in the world of World of Warcraft, uniting diverse and noble races. The Alliance is strong and focused on justice. This faction fights for peace and security in Azeroth.</p>
+                    <p>The Alliance is one of two factions in the world of World of Warcraft, uniting diverse and noble
+                        races. The Alliance is strong and focused on justice. This faction fights for peace and security
+                        in Azeroth.</p>
                 </div>
             </div>
             <div class="card">
@@ -42,7 +55,9 @@
                     <img src="images/World of Warcraft Horde.png" alt="">
                 </div>
                 <div class="back-1">
-                    <p>The Horde is one of two factions in the world of World of Warcraft, a strong and warlike group of races united by a common goal. The Horde is often associated with aggression and warfare, and it fights against the Alliance</p>
+                    <p>The Horde is one of two factions in the world of World of Warcraft, a strong and warlike group of
+                        races united by a common goal. The Horde is often associated with aggression and warfare, and it
+                        fights against the Alliance</p>
                 </div>
             </div>
         </div>
@@ -55,7 +70,8 @@
                     <img src="images/images for class/voin-photo-big.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The "Warrior" is a melee master who focuses on the use of weapons and armor. Warriors have great endurance and strength, and can tank or deal damage.</p>
+                    <p class="text-class">The "Warrior" is a melee master who focuses on the use of weapons and armor.
+                        Warriors have great endurance and strength, and can tank or deal damage.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -63,7 +79,8 @@
                     <img src="images/images for class/paladin-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The Paladin is a versatile class that combines melee and ranged strength, as well as healing and defense abilities.</p>
+                    <p class="text-class">The Paladin is a versatile class that combines melee and ranged strength, as
+                        well as healing and defense abilities.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -71,7 +88,8 @@
                     <img src="images/images for class/priest-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The Priest is a class that focuses on healing and support, as well as dealing magic damage.</p>
+                    <p class="text-class">The Priest is a class that focuses on healing and support, as well as dealing
+                        magic damage.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -79,7 +97,9 @@
                     <img src="images/images for class/druid-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The Druid is a versatile class that allows you to take on different forms. He can be a fighter in the form of a bear, a tall cat, an owl mage, or heal allies in the form of a druid.</p>
+                    <p class="text-class">The Druid is a versatile class that allows you to take on different forms. He
+                        can be a fighter in the form of a bear, a tall cat, an owl mage, or heal allies in the form of a
+                        druid.</p>
                 </div>
             </div>
         </div>
@@ -89,7 +109,8 @@
                     <img src="images/images for class/hunter-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">Hunter is a ranged class. Hunters use a bow or firearm to deal damage from afar and have special pets.</p>
+                    <p class="text-class">Hunter is a ranged class. Hunters use a bow or firearm to deal damage from
+                        afar and have special pets.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -97,7 +118,8 @@
                     <img src="images/images for class/mage-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The Mage is a class that specializes in magical spells. Mages have the ability to deal magical damage from various elements such as fire, ice and arcane.</p>
+                    <p class="text-class">The Mage is a class that specializes in magical spells. Mages have the ability
+                        to deal magical damage from various elements such as fire, ice and arcane.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -105,7 +127,8 @@
                     <img src="images/images for class/warlock-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">Warlock is a class of demonic magic. He is capable of inflicting magical damage, summoning demons into battle, and breaking the laws of nature to achieve his goals.</p>
+                    <p class="text-class">Warlock is a class of demonic magic. He is capable of inflicting magical
+                        damage, summoning demons into battle, and breaking the laws of nature to achieve his goals.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -113,7 +136,8 @@
                     <img src="images/images for class/rogue.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The Rogue is a class that specializes in stealth, melee damage, and evasion. Rogues have the ability to hide in the shadows and sneak up on enemies.</p>
+                    <p class="text-class">The Rogue is a class that specializes in stealth, melee damage, and evasion.
+                        Rogues have the ability to hide in the shadows and sneak up on enemies.</p>
                 </div>
             </div>
         </div>
@@ -123,7 +147,8 @@
                     <img src="images/images for class/death_knight_class_logo.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">Death Knights are warriors who were resurrected and enslaved by the Lich, the lord of the undead, and given the dark powers of undead and blood.</p>
+                    <p class="text-class">Death Knights are warriors who were resurrected and enslaved by the Lich, the
+                        lord of the undead, and given the dark powers of undead and blood.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -131,7 +156,8 @@
                     <img src="images/images for class/DH.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The Demon Hunter is a melee master. They have abilities such as metamorphosis, which allows them to transform into powerful demonic creatures.</p>
+                    <p class="text-class">The Demon Hunter is a melee master. They have abilities such as metamorphosis,
+                        which allows them to transform into powerful demonic creatures.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -139,7 +165,8 @@
                     <img src="images/images for class/monks.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">The monk combines martial arts and spiritual magic. Their main characteristics are balance, rage and harmony.</p>
+                    <p class="text-class">The monk combines martial arts and spiritual magic. Their main characteristics
+                        are balance, rage and harmony.</p>
                 </div>
             </div>
             <div class="class-card">
@@ -147,7 +174,9 @@
                     <img src="images/images for class/shaman-class-icon.png" alt="">
                 </div>
                 <div class="back">
-                    <p class="text-class">A shaman is a class that can interact with the spirits of nature and use elemental magic. Shamans can deal damage, heal allies, and provide support in group missions.</p>
+                    <p class="text-class">A shaman is a class that can interact with the spirits of nature and use
+                        elemental magic. Shamans can deal damage, heal allies, and provide support in group missions.
+                    </p>
                 </div>
             </div>
         </div>
@@ -160,7 +189,9 @@
                     <img src="images/images for races/humen.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Humans in World of Warcraft are a diverse and adaptive race, characterized by numerous kingdoms across Azeroth. Their history is filled with conflicts and alliances, and people are capable of various classes and professions, making them versatile participants in the game world.</p>
+                    <p>Humans in World of Warcraft are a diverse and adaptive race, characterized by numerous kingdoms
+                        across Azeroth. Their history is filled with conflicts and alliances, and people are capable of
+                        various classes and professions, making them versatile participants in the game world.</p>
                 </div>
             </div>
             <div class="races-card">
@@ -168,7 +199,11 @@
                     <img src="images/images for races/Orc.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Orcs in World of Warcraft are powerful and warlike creatures from the Horde faction. Their culture is steeped in honor and fighting spirit. Orcs are known for their strength and determination in battle, and they have a rich history, including alliances with other Horde races such as trolls and tauren. Orcs are capable of various classes, and they represent strength and martial arts in the game world.</p>
+                    <p>Orcs in World of Warcraft are powerful and warlike creatures from the Horde faction. Their
+                        culture is steeped in honor and fighting spirit. Orcs are known for their strength and
+                        determination in battle, and they have a rich history, including alliances with other Horde
+                        races such as trolls and tauren. Orcs are capable of various classes, and they represent
+                        strength and martial arts in the game world.</p>
                 </div>
             </div>
         </div>
@@ -178,7 +213,10 @@
                     <img src="images/images for races/Blood Elves.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Blood elves in World of Warcraft are a race that has gone through devastating events and the loss of some of their magic. They have beautiful appearance and sophisticated style. Blood elves are known for their magical abilities, especially their mastery of blood magic. This race has a rich culture and history, and they are part of the Horde faction.</p>
+                    <p>Blood elves in World of Warcraft are a race that has gone through devastating events and the loss
+                        of some of their magic. They have beautiful appearance and sophisticated style. Blood elves are
+                        known for their magical abilities, especially their mastery of blood magic. This race has a rich
+                        culture and history, and they are part of the Horde faction.</p>
                 </div>
             </div>
             <div class="races-card">
@@ -186,7 +224,9 @@
                     <img src="images/images for races/Draenei.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>The Draenei in World of Warcraft are a race of light and noble creatures known for their connection to light magic and their spiritual culture. The draenei arrived in Azeroth, fleeing the destroyed world of Argus, and they belong to the Alliance faction.</p>
+                    <p>The Draenei in World of Warcraft are a race of light and noble creatures known for their
+                        connection to light magic and their spiritual culture. The draenei arrived in Azeroth, fleeing
+                        the destroyed world of Argus, and they belong to the Alliance faction.</p>
                 </div>
             </div>
         </div>
@@ -196,7 +236,9 @@
                     <img src="images/images for races/Dwarves.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Dwarves in World of Warcraft are stocky, strong, and resourceful creatures who possess powerful physical strength and skill in mining and engineering. They have a unique culture and history, as well as great kingdoms such as the Iron House and Gnomeregan.</p>
+                    <p>Dwarves in World of Warcraft are stocky, strong, and resourceful creatures who possess powerful
+                        physical strength and skill in mining and engineering. They have a unique culture and history,
+                        as well as great kingdoms such as the Iron House and Gnomeregan.</p>
                 </div>
             </div>
             <div class="races-card">
@@ -204,7 +246,9 @@
                     <img src="images/images for races/Gnome.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Gnomes in World of Warcraft are small, inventive creatures known for their passion for engineering and mechanics. They have bright mental abilities and a sense of humor. Gnomes have their own unique culture and history, as well as kingdoms such as Gnomeregan.</p>
+                    <p>Gnomes in World of Warcraft are small, inventive creatures known for their passion for
+                        engineering and mechanics. They have bright mental abilities and a sense of humor. Gnomes have
+                        their own unique culture and history, as well as kingdoms such as Gnomeregan.</p>
                 </div>
             </div>
         </div>
@@ -214,7 +258,10 @@
                     <img src="images/images for races/Goblin.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Goblins in World of Warcraft are small, enterprising creatures known for their enterprise, greed, and technical skills. They have a rich culture, entrepreneurial spirit and ingenuity. Goblins have their own kingdom called "Keyazeren" and often serve as financial and technical tycoons.</p>
+                    <p>Goblins in World of Warcraft are small, enterprising creatures known for their enterprise, greed,
+                        and technical skills. They have a rich culture, entrepreneurial spirit and ingenuity. Goblins
+                        have their own kingdom called "Keyazeren" and often serve as financial and technical tycoons.
+                    </p>
                 </div>
             </div>
             <div class="races-card">
@@ -222,7 +269,9 @@
                     <img src="images/images for races/Nightelf.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Night Elves in World of Warcraft are the oldest race of Azeroth, known for their connection to nature and magic, as well as their harmonious coexistence with the forests and nature. They are part of the Alliance faction.</p>
+                    <p>Night Elves in World of Warcraft are the oldest race of Azeroth, known for their connection to
+                        nature and magic, as well as their harmonious coexistence with the forests and nature. They are
+                        part of the Alliance faction.</p>
                 </div>
             </div>
         </div>
@@ -232,7 +281,10 @@
                     <img src="images/images for races/Tauren.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Taurens in World of Warcraft are peaceful and nature-loving creatures known for their connection to nature and the earth. They are part of the Horde faction and possess powerful physical characteristics. The Tauren have their own unique culture, including the reverence of spirits and totems, as well as traditional rites and rituals.</p>
+                    <p>Taurens in World of Warcraft are peaceful and nature-loving creatures known for their connection
+                        to nature and the earth. They are part of the Horde faction and possess powerful physical
+                        characteristics. The Tauren have their own unique culture, including the reverence of spirits
+                        and totems, as well as traditional rites and rituals.</p>
                 </div>
             </div>
             <div class="races-card">
@@ -240,7 +292,10 @@
                     <img src="images/images for races/Troll.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Trolls in World of Warcraft are exotic and diverse creatures with a rich culture and history. They are often associated with jungles, forests and islands, and many of them belong to the Horde faction. Vivid and warlike creatures known for their hunting skills and magical abilities. They wield voodoo and nature magic.</p>
+                    <p>Trolls in World of Warcraft are exotic and diverse creatures with a rich culture and history.
+                        They are often associated with jungles, forests and islands, and many of them belong to the
+                        Horde faction. Vivid and warlike creatures known for their hunting skills and magical abilities.
+                        They wield voodoo and nature magic.</p>
                 </div>
             </div>
         </div>
@@ -250,7 +305,10 @@
                     <img src="images/images for races/Undead.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>The Undead in World of Warcraft are a race that are creatures brought to life from outside, whose souls belong to the Lich, the ruler of the undead. Undead are part of the Horde faction. Dark and mysterious creatures known for their magical abilities and lifeless appearance. Capable of various classes, but often associated with warlocks, shadow priests and death knights.</p>
+                    <p>The Undead in World of Warcraft are a race that are creatures brought to life from outside, whose
+                        souls belong to the Lich, the ruler of the undead. Undead are part of the Horde faction. Dark
+                        and mysterious creatures known for their magical abilities and lifeless appearance. Capable of
+                        various classes, but often associated with warlocks, shadow priests and death knights.</p>
                 </div>
             </div>
             <div class="races-card">
@@ -258,7 +316,11 @@
                     <img src="images/images for races/Worgen.jpg" alt="">
                 </div>
                 <div class="back">
-                    <p>Worgen in World of Warcraft are cursed werewolves with physical strength and aggressiveness. They have a unique appearance and are associated with the magic of disappearance. Worgen are part of the Alliance faction. They are capable of various classes, but are often associated with warriors and druids. They have the ability to transform into wolves in battle, which enhances their combat skills.</p>
+                    <p>Worgen in World of Warcraft are cursed werewolves with physical strength and aggressiveness. They
+                        have a unique appearance and are associated with the magic of disappearance. Worgen are part of
+                        the Alliance faction. They are capable of various classes, but are often associated with
+                        warriors and druids. They have the ability to transform into wolves in battle, which enhances
+                        their combat skills.</p>
                 </div>
             </div>
         </div>
@@ -266,13 +328,18 @@
     <footer>
         <h1 class="how">How to contact us</h1>
         <div class="contact">
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/instagram.png" alt="" class="social"></a>
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/telegram.png" alt="" class="social"></a>
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/youtube.png" alt="" class="social"></a>
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/twitter.png" alt="" class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/instagram.png" alt=""
+                    class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/telegram.png" alt=""
+                    class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/youtube.png" alt=""
+                    class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/twitter.png" alt=""
+                    class="social"></a>
         </div>
 
     </footer>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
