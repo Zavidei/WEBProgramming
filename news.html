@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/icon.png">
 </head>
+
 <body>
-    <header class="navigation-bar">
-        <a class="logo" href="index.html">
-            <img class="class" src="images/icon.png" alt="home">
-        </a>
-        <nav>
+    <header>
+        <div id="menu" class="navBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
             <a href="Review.html">Review</a>
             <a href="news.html">News</a>
             <a href="forum.html">Forum</a>
             <a href="addons.html">Addons</a>
+        </div>
+        <div class="nav">
+            <span onclick="openNav()">☰</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="navButton">Home</a></li>
+                    <li><a href="Review.html" class="navButton">Review</a></li>
+                    <li><a href="news.html" class="navButton">News</a></li>
+                    <li><a href="forum.html" class="navButton">Forum</a></li>
+                    <li><a href="addons.html" class="navButton">Addons</a></li>
+                </ul>
+            </nav>
             <a
-                href="https://sirus.one/?utm_source=google&utm_medium=cpc&utm_campaign=google_g&utm_content=675713451724&utm_term=вов%20сирус%203.3%205а.b.c..&gclid=EAIaIQobChMIloCh9Mv8gQMVhZmDBx2b9wsvEAAYASAAEgKhmfD_BwE">
-                <button class="button">Download</button>
-            </a>
-        </nav>
+                href="https://sirus.one/?utm_source=google&utm_medium=cpc&utm_campaign=google_g&utm_content=675713451724&utm_term=вов%20сирус%203.3%205а.b.c..&gclid=EAIaIQobChMIloCh9Mv8gQMVhZmDBx2b9wsvEAAYASAAEgKhmfD_BwE"><button>Download</button></a>
+        </div>
     </header>
     <section class="news">
         <h1>Last news</h1>
@@ -30,90 +41,152 @@
             <img src="images/news-img/news1.jpg" alt="">
             <div class="news-content">
                 <h2>Battle for Azeroth: Tiragarde Sound Guide</h2>
-                <p>Unravel a tangle of intrigue, in which treachery and dark magic are involved! Travel through the sea kingdom of Kul Tiras, ruled by four noble houses: House Proudmoore in Tiragarde Sound, House Waycrest in Drustvar, and House Stormsong in Stormsong Valley. Let's take a quick tour of Tiragarde Sound and the zone's capital, Boralus.Tiragarde Sound is the heart of Kul Tiras, and the capital city of Boralus is located almost in the very center of the zone. In the northern and southern parts of the coast, among the mountains and hills, a variety of wild animals live. Local residents engage in fishing in the east, south and west. Here everyone feels at home - both on land and at sea.</p>
+                <p>Unravel a tangle of intrigue, in which treachery and dark magic are involved! Travel through the sea
+                    kingdom of Kul Tiras, ruled by four noble houses: House Proudmoore in Tiragarde Sound, House
+                    Waycrest in Drustvar, and House Stormsong in Stormsong Valley. Let's take a quick tour of Tiragarde
+                    Sound and the zone's capital, Boralus.Tiragarde Sound is the heart of Kul Tiras, and the capital
+                    city of Boralus is located almost in the very center of the zone. In the northern and southern parts
+                    of the coast, among the mountains and hills, a variety of wild animals live. Local residents engage
+                    in fishing in the east, south and west. Here everyone feels at home - both on land and at sea.</p>
             </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news2.jpg" alt="">
             <div class="news-content">
-            <h2>Incredible phenomena in Azeroth: amazing and terrible</h2>
-            <p>Especially on the occasion of Hallow's End, our experts inspected all the swamps, caves, gorges, dungeons and clearings to find the strangest and creepiest places in Azeroth. If you want to tickle your nerves and satisfy your curiosity, then you are welcome! These are just a few interesting places that you can visit in Azeroth! Only the bravest and most curious can decide to travel, but it’s worth it! If you also know some creepy place that makes your hair stand on end, then tell another hero about it in the comments.</p>
-        </div>
+                <h2>Incredible phenomena in Azeroth: amazing and terrible</h2>
+                <p>Especially on the occasion of Hallow's End, our experts inspected all the swamps, caves, gorges,
+                    dungeons and clearings to find the strangest and creepiest places in Azeroth. If you want to tickle
+                    your nerves and satisfy your curiosity, then you are welcome! These are just a few interesting
+                    places that you can visit in Azeroth! Only the bravest and most curious can decide to travel, but
+                    it’s worth it! If you also know some creepy place that makes your hair stand on end, then tell
+                    another hero about it in the comments.</p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news3.png" alt="">
             <div class="news-content">
-            <h2>BLIZZCON 2023 TICKETS ON-SALE JULY 8 AND JULY 22!</h2>
-            <p>This year, the goal is to make BlizzCon® more fun than ever before. It will be a one-of-a-kind immersive experience that will transport participants into the universes of Warcraft®, Diablo® and Overwatch® with massive installations, artwork and themed spaces where friends can connect. Whether you're vacationing in Azeroth, exploring the mysteries of Sanctuary's dark cathedral, playing alongside the heroes of Overwatch ®, or tuning in from home, we want you to feel like you're entering universes with your friends, celebrating and having new experiences. what we'll do next, and hear from developers across Blizzard about their vision for our games, their craft, and more.</p>
-        </div>
+                <h2>BLIZZCON 2023 TICKETS ON-SALE JULY 8 AND JULY 22!</h2>
+                <p>This year, the goal is to make BlizzCon® more fun than ever before. It will be a one-of-a-kind
+                    immersive experience that will transport participants into the universes of Warcraft®, Diablo® and
+                    Overwatch® with massive installations, artwork and themed spaces where friends can connect. Whether
+                    you're vacationing in Azeroth, exploring the mysteries of Sanctuary's dark cathedral, playing
+                    alongside the heroes of Overwatch ®, or tuning in from home, we want you to feel like you're
+                    entering universes with your friends, celebrating and having new experiences. what we'll do next,
+                    and hear from developers across Blizzard about their vision for our games, their craft, and more.
+                </p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news4.jpg" alt="">
             <div class="news-content">
-            <h2>[UPDATED November 15th] Dragonflight pre-launch update, Stage 2 is now live!</h2>
-            <p>Stage 2 of the update is coming soon with events leading up to the release of Dragonflight! Get ready to create a Drakthyr Awakener and explore the Forbidden Land, fend off the Elemental Warriors in the Primal Storms in-game event, and take on the new Uldaman: Legacy of Tyr dungeon. Players will be able to bring destruction to their opponents (or buff their allies) as Drakthyr Awakeners, WoW's first race/class combination. Drakthyrs can switch between humanoid and terrifying dragon forms and are highly mobile during combat. The unique Awakener class can specialize in dealing melee damage or healing allies by summoning the mysterious powers of dragons. Awakening in the Forbidden Land, they will complete their training and join forces with the dragons to protect the islands.</p>
-        </div>
+                <h2>[UPDATED November 15th] Dragonflight pre-launch update, Stage 2 is now live!</h2>
+                <p>Stage 2 of the update is coming soon with events leading up to the release of Dragonflight! Get ready
+                    to create a Drakthyr Awakener and explore the Forbidden Land, fend off the Elemental Warriors in the
+                    Primal Storms in-game event, and take on the new Uldaman: Legacy of Tyr dungeon. Players will be
+                    able to bring destruction to their opponents (or buff their allies) as Drakthyr Awakeners, WoW's
+                    first race/class combination. Drakthyrs can switch between humanoid and terrifying dragon forms and
+                    are highly mobile during combat. The unique Awakener class can specialize in dealing melee damage or
+                    healing allies by summoning the mysterious powers of dragons. Awakening in the Forbidden Land, they
+                    will complete their training and join forces with the dragons to protect the islands.</p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news5.jpg" alt="">
             <div class="news-content">
-            <h2>Corrections made - November 11, 2022</h2>
-            <p>Here's information on hot fixes for World of Warcraft: Shadowlands, Burning Crusade Classic, and WoW Classic. Some of the fixes below will take effect immediately, but others will require a reboot of the game world. Please keep in mind that some problems can only be fixed with the release of the next update for the game client. The list will be updated as additional hot fixes become available.</p>
-        </div>
+                <h2>Corrections made - November 11, 2022</h2>
+                <p>Here's information on hot fixes for World of Warcraft: Shadowlands, Burning Crusade Classic, and WoW
+                    Classic. Some of the fixes below will take effect immediately, but others will require a reboot of
+                    the game world. Please keep in mind that some problems can only be fixed with the release of the
+                    next update for the game client. The list will be updated as additional hot fixes become available.
+                </p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news6.jpg" alt="">
             <div class="news-content">
-            <h2>Take part in this week's PvP Brawl: Temple of the Swiftmogu</h2>
-            <p>The Magnificent Six Brawl pits two teams of six players against three iconic battlegrounds: Warsong Gulch, Glitter Mines, and Temple of Kotmogu. The format of battles on each battlefield differs from the standard one. For example, the flags on the Warsong Gulch battlefield are located closer together, there are fewer minecarts to escort in the Glitter Mines, and only two orbs spawn in the Temple of Kotmogu.</p>
-        </div>
+                <h2>Take part in this week's PvP Brawl: Temple of the Swiftmogu</h2>
+                <p>The Magnificent Six Brawl pits two teams of six players against three iconic battlegrounds: Warsong
+                    Gulch, Glitter Mines, and Temple of Kotmogu. The format of battles on each battlefield differs from
+                    the standard one. For example, the flags on the Warsong Gulch battlefield are located closer
+                    together, there are fewer minecarts to escort in the Glitter Mines, and only two orbs spawn in the
+                    Temple of Kotmogu.</p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news7.jpg" alt="">
             <div class="news-content">
-            <h2>Weekly Event: Time Travel in Mists of Pandaria</h2>
-            <p>During the special event, players will have the opportunity to earn new rewards throughout the week in six iconic Mists of Pandaria dungeons. Simply open the party finder (default key: I), select “Dungeon Finder,” and select “Time Travel” from the drop-down menu. Once you click "Find Group", the system will select a group of players for you and take you to one of the heroic dungeons. Your character and equipment will level down according to the difficulty of the challenge, but the loot from the bosses will correspond to the real level. While traveling through time through dungeons, there is a chance to obtain items usually available in Heroic mode, as well as gain reputation with the corresponding faction.</p>
-        </div>
+                <h2>Weekly Event: Time Travel in Mists of Pandaria</h2>
+                <p>During the special event, players will have the opportunity to earn new rewards throughout the week
+                    in six iconic Mists of Pandaria dungeons. Simply open the party finder (default key: I), select
+                    “Dungeon Finder,” and select “Time Travel” from the drop-down menu. Once you click "Find Group", the
+                    system will select a group of players for you and take you to one of the heroic dungeons. Your
+                    character and equipment will level down according to the difficulty of the challenge, but the loot
+                    from the bosses will correspond to the real level. While traveling through time through dungeons,
+                    there is a chance to obtain items usually available in Heroic mode, as well as gain reputation with
+                    the corresponding faction.</p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news8.jpg" alt="">
             <div class="news-content">
-            <h2>Darkmoon Faire returns</h2>
-            <p>The Darkmoon Wooden Coaster is the largest, tallest, and fastest in Azeroth! Hold on tight and ride with the breeze as you enjoy the twists and turns and dizzying climbs and descents of the unstable and winding wooden trolley track. There are no height restrictions, so dwarves, gnomes and goblins can ride to their heart's content.
+                <h2>Darkmoon Faire returns</h2>
+                <p>The Darkmoon Wooden Coaster is the largest, tallest, and fastest in Azeroth! Hold on tight and ride
+                    with the breeze as you enjoy the twists and turns and dizzying climbs and descents of the unstable
+                    and winding wooden trolley track. There are no height restrictions, so dwarves, gnomes and goblins
+                    can ride to their heart's content.
 
-                All riders are given the positive effect “UUUUUH!”, increasing the amount of experience and reputation gained by one hour. The increase in experience will be very useful when collecting sets of traditional armor and discovering allied races, the number of which has been supplemented by vulperas and mechagnomes.</p>
-        </div>
+                    All riders are given the positive effect “UUUUUH!”, increasing the amount of experience and
+                    reputation gained by one hour. The increase in experience will be very useful when collecting sets
+                    of traditional armor and discovering allied races, the number of which has been supplemented by
+                    vulperas and mechagnomes.</p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news9.jpg" alt="">
             <div class="news-content">
-            <h2>The Torghast: Choir of the Dead event has begun!</h2>
-            <p>In the Shadowlands expansion, players will find three new events in Torghast, Tower of the Damned, where participants will gain special anima abilities. This way, players will have a lot of incredible abilities at their disposal that will come in handy while exploring the halls of Torghast. If you select an anima themed ability at the start of a dungeon visit, the options offered later will also change to include new themed abilities.
+                <h2>The Torghast: Choir of the Dead event has begun!</h2>
+                <p>In the Shadowlands expansion, players will find three new events in Torghast, Tower of the Damned,
+                    where participants will gain special anima abilities. This way, players will have a lot of
+                    incredible abilities at their disposal that will come in handy while exploring the halls of
+                    Torghast. If you select an anima themed ability at the start of a dungeon visit, the options offered
+                    later will also change to include new themed abilities.
 
-                For example, if during the Beasts of Prodigum event you choose an ability related to the Maw Beast, then after that you will receive anima abilities in Torghast that further enhance your creature. If you refuse the new anima ability and prefer the regular one, then until the end of your visit to Torghast you will not receive thematic abilities.</p>
-        </div>
+                    For example, if during the Beasts of Prodigum event you choose an ability related to the Maw Beast,
+                    then after that you will receive anima abilities in Torghast that further enhance your creature. If
+                    you refuse the new anima ability and prefer the regular one, then until the end of your visit to
+                    Torghast you will not receive thematic abilities.</p>
+            </div>
         </div>
         <div class="block-news">
             <img src="images/news-img/news10.jpg" alt="">
             <div class="news-content">
-            <h2>Remember our departed heroes on Day of the Dead!</h2>
-            <p>Do you feel a chill?
-                It was on the Day of the Dead that the door to the world of spirits opened.
-                That's why we decorate the graves of friends and relatives who have left us with flowers and candles, and place gifts on the gravestones: we want to welcome them into our world, even if they will only stay with us for a short time.
-                Come! Dance with me!
-                Let's pay our respects to the ghosts of those we have lost. Let them smile again and share in the feast, knowing that they are still loved. Katrina</p>
-        </div>
+                <h2>Remember our departed heroes on Day of the Dead!</h2>
+                <p>Do you feel a chill?
+                    It was on the Day of the Dead that the door to the world of spirits opened.
+                    That's why we decorate the graves of friends and relatives who have left us with flowers and
+                    candles, and place gifts on the gravestones: we want to welcome them into our world, even if they
+                    will only stay with us for a short time.
+                    Come! Dance with me!
+                    Let's pay our respects to the ghosts of those we have lost. Let them smile again and share in the
+                    feast, knowing that they are still loved. Katrina</p>
+            </div>
         </div>
     </section>
     <footer>
         <h1 class="how">How to contact us</h1>
         <div class="contact">
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/instagram.png" alt="" class="social"></a>
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/telegram.png" alt="" class="social"></a>
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/youtube.png" alt="" class="social"></a>
-            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/twitter.png" alt="" class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/instagram.png" alt=""
+                    class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/telegram.png" alt=""
+                    class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/youtube.png" alt=""
+                    class="social"></a>
+            <a href="https://www.youtube.com/watch?v=-tJYN-eG1zk"><img src="images/twitter.png" alt=""
+                    class="social"></a>
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
