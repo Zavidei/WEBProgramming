@@ -3,76 +3,128 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navigation-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 1;
-    background-color: rgba(36, 37, 38, 0.95);
-    position: sticky;
-    top: 0;
-    height: 70px;
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
-nav {
+.navBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+span {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav {
+    height: 70px;
+    background-color: rgb(36, 37, 38, 0.95);
+    position: fixed;
+    width: 100%;
     display: flex;
-    gap: 3em;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
+    z-index: 2;
 }
 
-nav a {
-    display: block;
-    font-family: 'Roboto';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    color: #FFF;
-
-
-}
-
-.class {
-    width: 50px;
-    height: 50px;
-    align-items: center;
-    margin-top: 3px;
-}
-
-.button {
-    background-color: rgb(0, 0, 0, 0.3);
-    color: #FFF;
-    border-radius: 30px;
-    border: 2px solid rgb(165, 9, 5);
+button {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
     font-weight: 700;
     font-size: 1em;
-    transition: 2;
-    transition: all 0.5s ease;
     cursor: pointer;
-
-
+    border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(165, 9, 5);
+    border-image: initial;
+    transition: all 0.5s ease 0s;
+    margin-right: 30px;
 }
 
-.button:hover {
-    background: rgb(165, 9, 5);
+button:hover {
+    background-color: rgb(165, 9, 5);
 }
 
-a {
+.navBar a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: #FFF;
-    transition: all 0.5s ease;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
-a:hover {
+.navBar a:hover {
+    color: #f1f1f1;
+}
+
+.navBar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+li {
+    display: inline;
+}
+
+.navButton {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    transition: all 0.5s ease;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.navButton:hover {
     color: rgb(165, 9, 5);
 }
+
+@media only screen and (min-width: 479px) {
+    .navButton {
+        display: inline;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navButton {
+        display: none;
+    }
+
+    span {
+        display: block;
+    }
+}
+
 .review-1{ 
-    min-height: 100vh;
+    height: auto;
     position: relative;
     margin: 0;
     background-image: url(images/logo-review.jpg);
@@ -81,11 +133,11 @@ a:hover {
     
 }
 .review-2{
-    min-height: 100vh;
+    height: auto;
     position: relative;
     margin: 0;
     background: linear-gradient(to top, #303032, #afeaec);
-
+    padding-bottom: 20px;
 }
 h1{
     font-weight: 400;
@@ -95,16 +147,18 @@ h1{
     color: #D2C8AE;
     display: flex;
     justify-content: center;
+    text-align: center;
     padding-top: 80px;
     font-size: 3em;
 }
 .side{
     margin-top: 40px;
     width: 100%;
-    height: 450px;
+    height: auto;
     position: relative;
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .card{
@@ -114,6 +168,8 @@ h1{
     position: relative;
     perspective: 1000px;
     align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .front{
     position: absolute;
@@ -147,26 +203,26 @@ p{
     text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
     color: #B0AFAC;
     line-height: 30px;
-    font-size: 25px;
+    font-size: calc(15px + 8 * (100vw - 320px) / 880);
     margin-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
 }
 .review-3{
-    min-height: 150vh;
+    height: auto;
     position: relative;
     margin: 0;
     background-color: #303032;
-
+    padding-bottom: 0px;
 }
 .class-1{
-    margin-top: 40px;
+    margin-top: 15px;
     width: 100%;
-    height: 250px;
+    height: auto;
     position: relative;
-    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
  
 }
@@ -176,16 +232,18 @@ p{
     display: inline-block;
     position: relative;
     perspective: 1000px;
+    margin-top:15px ;
+    margin-right: 10px;
     
 }
 .class-card:hover .front{transform: rotateY(180deg);}
 .class-card:hover .back{transform: rotateY(360deg);}
 .review-4{
-    min-height: 450vh;
+    height: auto;
     position: relative;
     margin: 0;
     background-color: #303032;
-
+    padding-bottom: 100px;
 }
 .front-1{
     position: absolute;
@@ -227,12 +285,14 @@ p{
     text-align: center;
 }
 .races{
-    margin-top: 40px;
+    margin-top: 15px;
     width: 100%;
-    height: 449px;
+    height: auto;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+
 }
 .races-card{
     width: 450px;
@@ -240,6 +300,8 @@ p{
     display: inline-block; 
     position: relative; 
     perspective: 1000px;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 .races-card:hover .front{transform: rotateY(180deg);}
 .races-card:hover .back{transform: rotateY(360deg);}
