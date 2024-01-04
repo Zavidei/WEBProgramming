@@ -7,22 +7,29 @@
     <link rel="stylesheet" href="Style for forum page.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/icon.png">
-</head>
-<body>
-    <header class="navigation-bar">
-        <a class="logo" href="index.html">
-            <img class="class" src="images/icon.png" alt="home">
-        </a>
-        <nav>
+    <header>
+        <div id="menu" class="navBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
             <a href="Review.html">Review</a>
             <a href="news.html">News</a>
             <a href="forum.html">Forum</a>
             <a href="addons.html">Addons</a>
+        </div>
+        <div class="nav">
+            <span onclick="openNav()">☰</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="navButton">Home</a></li>
+                    <li><a href="Review.html" class="navButton">Review</a></li>
+                    <li><a href="news.html" class="navButton">News</a></li>
+                    <li><a href="forum.html" class="navButton">Forum</a></li>
+                    <li><a href="addons.html" class="navButton">Addons</a></li>
+                </ul>
+            </nav>
             <a
-                href="https://sirus.one/?utm_source=google&utm_medium=cpc&utm_campaign=google_g&utm_content=675713451724&utm_term=вов%20сирус%203.3%205а.b.c..&gclid=EAIaIQobChMIloCh9Mv8gQMVhZmDBx2b9wsvEAAYASAAEgKhmfD_BwE">
-                <button class="button">Download</button>
-            </a>
-        </nav>
+                href="https://sirus.one/?utm_source=google&utm_medium=cpc&utm_campaign=google_g&utm_content=675713451724&utm_term=вов%20сирус%203.3%205а.b.c..&gclid=EAIaIQobChMIloCh9Mv8gQMVhZmDBx2b9wsvEAAYASAAEgKhmfD_BwE"><button>Download</button></a>
+        </div>
     </header>
     <section class="forum">
         <h1>Forums</h1>
@@ -64,5 +71,6 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
