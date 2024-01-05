@@ -121,24 +121,19 @@ li {
     span {
         display: block;
     }
+
 }
 
 .home-1 {
-    min-height: 100vh;
+    height: auto;
     position: relative;
-    margin: 0;
+    padding-top: 70px;
+}
+.imagesTablet{
+    width: 100%;
+
 }
 
-.vidio {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 70%;
-    z-index: -1;
-}
 
 .home-2 {
     min-height: 150vh;
