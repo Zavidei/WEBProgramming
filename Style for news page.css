@@ -209,7 +209,6 @@ p{
 @media only screen and (max-width: 768px) {
     .block-news {
         display: inline-block;
-        margin-left: 15px;
     }
     img{
         width: 100%;
