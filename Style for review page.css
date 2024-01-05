@@ -244,6 +244,11 @@ p{
     margin: 0;
     background-color: #303032;
     padding-bottom: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+img{
+    border-radius:10px;
 }
 .front-1{
     position: absolute;
