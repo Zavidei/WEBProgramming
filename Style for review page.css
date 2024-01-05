@@ -301,7 +301,6 @@ p{
     position: relative; 
     perspective: 1000px;
     margin-top: 15px;
-    margin-right: 10px;
 }
 .races-card:hover .front{transform: rotateY(180deg);}
 .races-card:hover .back{transform: rotateY(360deg);}
